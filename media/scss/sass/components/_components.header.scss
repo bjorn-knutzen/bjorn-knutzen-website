@@ -1,0 +1,70 @@
+.header-container {
+
+    header {
+        width: 100%;
+    }
+
+    .showScrollContainer{
+        transition: all 0.2s ease-in;
+        height: 40px;
+        margin-bottom: 0;
+        display: block;
+        width: 100%;
+
+        .title {
+            width: 90px;
+            height: 30px;
+            background-size: 90px 30px;
+            background-position: top;
+            margin-top: 0;
+            
+            @media only screen and (max-width: 1140px) {
+                padding-left: 5%;
+            }
+        }	
+
+        nav .link {
+            margin-top: 0px;
+            padding-bottom: 1px;
+            padding-top: 2px;
+        }
+      
+        ul li .behance{
+            margin-top: 0px;
+            height: 29px;
+            width: 29px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        nav .link {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            padding-top: 2px;
+            color: #ffffff !important;
+            font-weight: 400;
+            font-size: 18px;
+
+        }
+ 
+        ul li .behance{
+            margin-top: 0px;
+            height: 29px;
+            width: 29px;
+        }
+    }
+}
+
+.hiddenScroll{
+    transition: all 0.2s ease-in;
+    // height: 0;
+    // margin-bottom: 80px;
+}
+
+.menu-content{
+	margin: 0 auto;
+	max-width: 1160px;
+	min-width: 10px;
+}

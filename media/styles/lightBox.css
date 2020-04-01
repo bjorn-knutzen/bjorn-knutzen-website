@@ -1,0 +1,443 @@
+.lb-album{
+	margin: 0 auto;
+}
+
+.lb-album li{
+	float: left;
+	position: relative;
+	list-style: none;
+}
+
+.lb-album li > a,
+.lb-album li > a img{
+	display: block;
+}
+
+.lb-album li > a{
+	width: 425px;
+	height: 260px;
+	position: relative;
+}
+
+.lb-album li > a span{
+	position: absolute;
+	width: 425px;
+	height: 260px;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	line-height: 150px;
+	color: rgba(27,54,81,0.8);
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+	font-size: 24px;
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	background: rgb(241,210,194);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%, rgba(241,210,194,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.56)), color-stop(100%,rgba(241,210,194,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	-webkit-transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear;
+	-ms-transition: opacity 0.3s linear;
+	transition: opacity 0.3s linear;
+}
+
+.lb-album li > a:hover span{
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+
+.lb-overlay{
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	overflow: auto;
+	left: 0px;
+	top: 0px;
+	z-index: 2000;
+	text-align: center;
+}
+
+.lb-overlay > .detail-image{
+	content: '';
+	left: 0;
+	bottom: 0;
+	margin-top: 15px;
+	overflow: visible;
+	max-width: 100%;
+	height: 250px; 
+	z-index: -1;
+	-webkit-transform: skewY(-2deg);
+	-moz-transform: skewY(-2deg);
+	-ms-transform: skewY(-2deg);
+	-o-transform: skewY(-2deg);
+	transform: skewY(-2deg);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: initial;
+	display: block;
+	padding: 40px 0;
+	-webkit-transition: opacity 0.3s linear 0.6s;
+	-moz-transition: opacity 0.3s linear 0.6s;
+	-o-transition: opacity 0.3s linear 0.6s;
+	-ms-transition: opacity 0.3s linear 0.6s;
+	transition: opacity 0.3s linear 0.6s;
+	position: relative;	
+}
+
+.down{
+	background: rgba(0, 0, 0, 0) url("../images/down.png") no-repeat scroll 0 0;
+	cursor: default;
+	display: block;
+	float: left;
+	height: 43px;
+	width: 43px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -27px;
+	margin: auto;
+	animation: down 1s  infinite;
+	}
+	
+@keyframes down {
+	0% {
+		top: -27px;
+		transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+	}
+	52% {
+		top: -20px;
+		transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+	}
+	100% {
+		top: -27px;
+		transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+	}
+}
+	
+.lb-overlay > div{
+	position: relative;
+	color: rgba(27,54,81,0.8);
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	max-width: 822px;
+	margin: 25px auto 20px auto;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+	display: inline-block;
+	-webkit-transition: opacity 0.4s linear 0.2s;
+	-moz-transition: opacity 0.4s linear 0.2s;
+	-o-transition: opacity 0.4s linear 0.2s;
+	-ms-transition: opacity 0.4s linear 0.2s;
+	transition: opacity 0.4s linear 0.2s;
+}
+
+.lightbox-textarea{
+	max-width: 822px;
+	min-height: 40px;
+	width: 100%;
+	padding-bottom: 30px;
+	background: url(../images/seperator.png) no-repeat bottom;
+}
+
+.lb-overlay .brandlink{
+	color: #369d99;
+	font-weight: 200;
+	text-decoration: none;
+}
+
+.lb-overlay a:hover{
+	text-decoration: underline;
+	}
+
+.lb-overlay h3
+{
+	color: #6b6b6b;
+	font-family: "lowveticaregular";
+	font-weight: 100;
+	letter-spacing: 0px;
+	display: block;	
+	text-align: left;
+	margin-left: 16px!important;
+}
+	
+.lb-overlay p{
+	color: #6b6b6b;
+    font-family: Verdana,Geneva,sans-serif;
+    font-weight: 100;
+	font-size: 15px!important;
+    letter-spacing: 0px;
+	display: block;	
+	text-align: left;
+	margin-left: 16px!important;
+}
+
+.lb-overlay .lightbox-textarea h3{
+	font-size: 48px;
+	line-height: 40px;
+	margin: 0px 0px 20px 0px;
+	
+}
+
+.lb-overlay .lightbox-textarea p{
+	margin-top: 0px;
+	filter: alpha(opacity=80);
+}
+
+.lb-overlay a.lb-close{
+	width: 135px;
+	height: 30px;
+	z-index: 1001;
+	color: #fff;
+	position: absolute;	
+	left: 85%;
+	color: #444444;
+	text-decoration: none;
+	padding-top: 0px;
+	background-color: #efefef;
+	background-image: url(../images/hoverbackhome.jpg);
+	background-position: -154px 0;
+	background-repeat: no-repeat;
+	font-size: 15px;
+	line-height: 26px;
+	text-align: center;
+	overflow: hidden;
+	margin-left: -100px;
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	-webkit-transition: opacity 0.3s linear 1.2s;
+	-moz-transition: opacity 0.3s linear 1.2s;
+	-o-transition: opacity 0.3s linear 1.2s;
+	-ms-transition: opacity 0.3s linear 1.2s;
+	transition: opacity 0.3s linear 1.2s;
+	display: block;
+	transition: background-position 0.5s ease;
+}
+
+i{
+	color: #4baaa2;
+}
+
+.lb-overlay a.lb-close:hover{
+	color: #ffffff;
+	background-position: 0px 0;
+	transition: background-position 0.5s ease;
+}
+
+.lb-overlay img{
+	/* height: 100%; For Opera max-height does not seem to work */
+	max-height: 100%;
+	position: relative;
+}
+
+.lb-overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0px;
+	right: 0px;
+	padding: 60px 0px 120px 0px;
+}
+
+.lb-overlay:target img {
+	margin: 0px auto;
+	-webkit-animation: fadeInScale 1.2s ease-in-out;
+	-moz-animation: fadeInScale 1.2s ease-in-out;
+	-o-animation: fadeInScale 1.2s ease-in-out;
+	-ms-animation: fadeInScale 1.2s ease-in-out;
+	animation: fadeInScale 1.2s ease-in-out;
+}
+
+.description{
+	max-width: 822px;
+	text-align: left;
+}
+
+.accompanying-text{
+	max-width: 760px!important;
+	width: 100%;
+	margin: 0px 0px 40px 0px!important;
+	font-size: 22px;
+	text-align: left;
+	display: inline-block;
+}
+
+/*===============BACKGROUNDS============================*/
+
+#image-1,
+#image-2,
+#image-3,
+#image-4,
+#image-5,
+#image-6,
+#image-7,
+#image-8,
+#image-9,
+#image10,
+#image11,
+#image12{
+	background-color: #ffffff;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+.detail-image:target > div,
+.lb-overlay:target a.lb-close,
+.lb-overlay:target > div{
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+@-webkit-keyframes fadeInScale {
+  0% { -webkit-transform: scale(0.6); opacity: 0; }
+  100% { -webkit-transform: scale(1); opacity: 1; }
+}
+@-moz-keyframes fadeInScale {
+  0% { -moz-transform: scale(0.6); opacity: 0; }
+  100% { -moz-transform: scale(1); opacity: 1; }
+}
+@-o-keyframes fadeInScale {
+  0% { -o-transform: scale(0.6); opacity: 0; }
+  100% { -o-transform: scale(1); opacity: 1; }
+}
+@-ms-keyframes fadeInScale {
+  0% { -ms-transform: scale(0.6); opacity: 0; }
+  100% { -ms-transform: scale(1); opacity: 1; }
+}
+@keyframes fadeInScale {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* 
+	100% Height for Opera as the max-height seems to be ignored, not optimal for large screens 
+	http://bricss.net/post/11230266445/css-hack-to-target-opera 
+*/
+x:-o-prefocus, .lb-overlay img {
+    height: 100%;
+}
+
+.aanbodHead {
+    background: rgba(0, 0, 0, 0) url("../images/aanbondDetail.jpg") repeat scroll 0 0;
+}
+
+.mauritsHead {
+    background: rgba(0, 0, 0, 0) url("../images/mauritsDetail.jpg") repeat scroll 0 0;
+}
+
+.remaxHead {
+    background: rgba(0, 0, 0, 0) url("../images/remaxDetail.jpg") repeat scroll 0 0;
+}
+
+.digimoHead {
+    background: rgba(0, 0, 0, 0) url("../images/digimoDetail.jpg") repeat scroll 0 0;
+}
+
+.probiblioHead {
+    background: rgba(0, 0, 0, 0) url("../images/probiblioDetail.jpg") repeat scroll 0 0;
+}
+
+.motronixDetail {
+    background: rgba(0, 0, 0, 0) url("../images/motronixDetail.jpg") repeat scroll 0 0;
+}
+
+.vaningenHead {
+    background: rgba(0, 0, 0, 0) url("../images/vaningebDetail.jpg") repeat scroll 0 0;
+}
+
+.arrowDetail {
+    background: rgba(0, 0, 0, 0) url("../images/arrowDetail.jpg") repeat scroll 0 0;
+}
+
+.gcuDetail {
+    background: rgba(0, 0, 0, 0) url("../images/gcuDetail.jpg") repeat scroll 0 0;
+}
+
+.noisjDetail {
+    background: rgba(0, 0, 0, 0) url("../images/noisjDetail.jpg") repeat scroll 0 0;
+}
+
+.niveaDetail {
+    background: rgba(0, 0, 0, 0) url("../images/niveaDetail.jpg") repeat scroll 0 0;
+}
+
+.maaslanderDetail {
+    background: rgba(0, 0, 0, 0) url("../images/maaslanderDetail.jpg") repeat scroll 0 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.lb-overlay a.lb-close{
+		top: 0px;
+	}
+	
+	.aanbodHead {
+		background: url("../images/aanbondDetail.jpg") no-repeat center center; 
+	}
+
+	.mauritsHead {
+		background: url("../images/mauritsDetail.jpg") no-repeat center center; 
+	}
+
+	.remaxHead {
+		background: url("../images/remaxDetail.jpg") no-repeat center center; 
+	}
+
+	.digimoHead {
+		background: url("../images/digimoDetail.jpg") no-repeat center center;
+	}
+
+	.probiblioHead {
+		background: url("../images/probiblioDetail.jpg") no-repeat center center; 
+	}
+
+	.motronixDetail {
+		background: url("../images/motronixDetail.jpg") no-repeat center center; 
+	}
+
+	.vaningenHead {
+		background: url("../images/vaningebDetail.jpg") no-repeat center center; 
+	}
+
+	.arrowDetail {
+		background: url("../images/arrowDetail.jpg") no-repeat center center; 
+	}
+
+	.gcuDetail {
+		background: url("../images/gcuDetail.jpg") no-repeat center center; 
+	}
+
+	.noisjDetail {
+		background: url("../images/noisjDetail.jpg") no-repeat center center; 
+	}
+
+	.niveaDetail {
+		background: url("../images/niveaDetail.jpg") no-repeat center center; 
+	}
+
+	.maaslanderDetail {
+		background: url("../images/maaslanderDetail.jpg") no-repeat center center; 
+	}
+	
+}
+
+@media only screen and (max-width: 480px){
+	
+	.lb-overlay h3{
+		margin-top: 10px!important;
+	}
+
+	.lb-overlay a.lb-close{
+		top: -25px;
+	}
+	
+}
+

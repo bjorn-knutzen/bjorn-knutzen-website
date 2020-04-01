@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+
+//COLORS
+
+$prim-brand-color:  #ff5c4f !default;
+$sec-brand-color:   #369d99 !default;
+
+$secondary:         #6b6b6b !default;
+$grey:         		#6b6b6b !default;
+
+//FONT SIZES
+
+$ms-text:           16px !default;
+$m-text:            18px !default;
+$l-text:            20px !default;
+$xl-text: 			48px !default;
+
+//FONT WEIGHT
+
+$thin: 			    100 !default;
+
+//ANIMATIONS
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 9;
+    }
+}
+
+@keyframes arrow-down {
+	0% {
+		top: -27px;
+		transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+	}
+	52% {
+		top: -20px;
+		transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+	}
+	100% {
+		top: -27px;
+		transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+	}
+}
+
+
+
+.default-state{
+	transform: translateY(20px);
+	opacity: 0;
+	transition: all 0.9s ease;
+}
+
+
+.active {
+	transform: translateY(0px);
+	opacity: 1;
+	transition: all 0.9s ease;
+}
+

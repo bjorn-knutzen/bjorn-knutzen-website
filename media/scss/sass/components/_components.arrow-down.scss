@@ -1,0 +1,27 @@
+.arrow-down{
+	height: 43px;
+	width: 43px;
+	background: rgba(0, 0, 0, 0) url("../../images/down.png") no-repeat scroll 0 0;
+	z-index: 1000;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+    transform: translateY(17px);
+	margin: auto;
+	animation: arrow-down 1s infinite;
+}
+	
+.arrow-up{
+	height: 43px;
+	width: 43px;
+	background: rgba(0, 0, 0, 0) url("../../images/down.png") no-repeat scroll 0 0;
+	z-index: 1000;
+	display: block;
+	position: relative;
+	left: 0;
+	right: 0;
+    transform: translateY(17px) rotate(180deg);
+	margin: auto;
+	animation: arrow-down 1s infinite;
+}

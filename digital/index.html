@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>Digital Marketing</title>
+		<link rel="stylesheet" type="text/css" href="media/styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="media/styles/main.css">
+		<script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/document_iterator.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/find_proxy.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/get_html_text.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/global_constants.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/name_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/number_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/string_finder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/change_sink.js"></script><meta name="document_iterator.js"><meta name="find_proxy.js"><meta name="get_html_text.js"><meta name="global_constants.js"><meta name="name_injection_builder.js"><meta name="number_injection_builder.js"><meta name="string_finder.js"><meta name="change_sink.js">
+	</head>
+	
+	<body>
+		<div id="header">
+			<div id="logos">
+				<img src="media/images/GCU-logo.png" alt="GCU"> <img src="media/images/heineken-logo.png" alt="Heineken"> <img src="media/images/bright-alley.png" alt="bright-alley"> <img src="media/images/b-b-logo.png" alt="bBasket Builders">	  
+			</div>	
+		
+		</div>	
+		<div class="container">
+			<div id="content">
+				<video width="768" height="432" autoplay="autoplay" poster="/Heineken.DigitalMarketing/Media/Intro/video/examples/camera.jpg" controls="controls" tabindex="0">
+					<source type="video/ogg" src="media/video/DigitalMarketing.mov">
+					<source type="video/mp4" src="media/video/DigitalMarketing.mp4">
+					<source type="video/ogg" src="media/video/DigitalMarketing.ogv">
+					<source type="video/ogg" src="media/video/DigitalMarketing.wmv">
+					<!-- setup player container -->
+					<div id="info"><div id="video_player" style="display:block;width:768px;height:438px;"></div></div>
+					<!-- /setup player container -->
+				</video>	
+				
+			</div>
+		</div>	
+				
+		<div class="container">	
+			<div id="inner-content">				
+				<div class="subcontent">
+					<img src="media/images/picture1.jpg" alt="slide" /> 
+					<div class="description">
+						<p>Digital is part of everyday life for the consumers who Heineken targets to sustain and grow its portfolio of brands around the world. Therefore, Digital Marketing should be part of everyday marketing within the Heineken marketing community.</P>
+					</div>
+				</div>	
+				<div class="subcontent">
+					<img src="media/images/picture2.jpg" alt="slide"  /> 
+					<div class="description-next">
+						<p>We take a contemporary learning approach: a personal survey build on the insight that people’s current understanding of Digital Marketing  is through personal experience rather than training.</P>
+					</div>
+				</div>
+				<div class="subcontent">
+					<img src="media/images/picture3.jpg" alt="slide" /> 
+					<div class="description">
+						<p>… a quiz that introduces the themes of the course under the banner of 'new normals' (the new normal are what we should acknowledge as normal within the digital world and as a consequence within the real world) </P>
+					</div>
+				</div>	
+				<div class="subcontent">
+					<img src="media/images/picture4.jpg" alt="slide" /> 
+					<div class="description-next">
+						<p></P>
+					</div>
+				</div>
+				<div class="subcontent">
+					<img src="media/images/picture5.jpg"alt="slide" /> 
+					<div class="description">
+						<p></P>
+					</div>
+				</div>
+				<div class="subcontent">
+					<img src="media/images/picture6.jpg" alt="slide" /> 
+					<div class="description-next">
+						<p>… a social media stream (reusable in the classroom) all designed to engage participants in the concepts and best practice examples. </P>
+					</div>
+				</div>				
+				<div class="subcontent">
+					<img src="media/images/picture7.jpg" alt="slide" /> 
+					<div class="description">
+						<p></P>
+					</div>
+				</div>
+				<div class="subcontent">
+					<img src="media/images/picture8.jpg" alt="slide" /> 
+					<div class="description-next">
+						<p></P>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.7.2/dojo/dojo.js"></script>
+		<script src="media/scripts/flowplayer-3.2.6.min.js"></script>
+		<script type="text/javascript">
+			if(dojo.byId("video_player") && (!dojo.isIE || dojo.isIE <9)){
+				//code to execute for ie8 and more
+				var playa = flowplayer("video_player", 
+				{
+					src: "media/images/flowplayer-3.2.7.swf",
+					version: [9, 115],
+					width: 768,
+					height: 432,
+					wmode: 'transparent',
+					onFail: function () {
+						alert("Could not update or run flash player. The browser also does not support the right video playback standards. Please install a recent version of the adobe flash player.");
+					}
+				},
+				{
+					clip: {
+						url: 'http://DigitalMarketing.heineken.preview.b-b.nl/media/video/DigitalMarketing.mp4'
+					},
+					controls: {
+						// location of the controlbar plugin
+						url: 'media/images/flowplayer.controls-3.2.5.swf'
+					},
+					'onBegin': function () {
+						 var plaatje = document.getElementById("plaatje_id");
+						 plaatje.parentNode.removeChild(plaatje);
+					}
+				});
+			}
+		</script>				
+	</body>
+</html>

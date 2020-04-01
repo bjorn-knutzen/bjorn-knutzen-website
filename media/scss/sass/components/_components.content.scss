@@ -1,0 +1,17 @@
+.home-mobile{
+	padding-bottom: 20px!important;
+}
+
+.section {
+	position: relative;
+
+	&:before {
+		content: "";
+		height: 57vh;
+		width: 2px;
+		background: $secondary;
+		position: absolute;
+		top: 114px;
+		left: -30px;
+	}
+}

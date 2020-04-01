@@ -1,0 +1,42 @@
+.portfolio-page {
+        overflow-y: auto;
+        min-height: auto !important;
+
+    .header-container{
+        height: 45px;
+        background: none;
+    }
+
+    &__content{
+        max-width: 1024px;
+        min-height: 100px;
+        padding-bottom: 30px;
+        width: 100%;
+        margin: 25px auto 0 auto;
+        position: relative; 
+        animation: fade-in 1s forwards;
+
+        &--head{
+            max-width: 822px;
+            margin-top: 80px;
+            margin-bottom: 30px;
+            background: rgba(0, 0, 0, 0) url("../../images/seperator.png") no-repeat scroll center bottom;
+        }
+
+        h3{
+            display: block;
+            letter-spacing: 0;
+            line-height: 0.9;
+            margin: 0 0 20px 16px;
+            font-family: "lowveticaregular";
+            font-size: 48px;
+            font-weight: 100;
+        }
+
+        p{
+            display: block;
+            margin-left: 16px;
+            text-align: left;
+        }
+    }
+} 

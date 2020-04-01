@@ -1,0 +1,21 @@
+.jumbotron{
+    max-width: 100%;
+    height: auto;  
+    max-height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;	
+    display: block;
+    padding: 20px 0;
+    transform: skewY(-2deg);
+    opacity: 0;
+    animation: fade-in 1s forwards;
+    animation-delay: 0.5s;
+    margin-bottom: 30px;
+
+    img{
+        width: 100%;
+        display: block;
+        vertical-align: middle;
+    }
+}

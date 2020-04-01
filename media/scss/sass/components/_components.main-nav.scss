@@ -1,0 +1,184 @@
+.main-nav{
+    min-height: 35px;
+	float: right;
+
+    &__links{
+        width: 80%;
+        display: block;
+        float: left;
+        padding: 0;
+        margin: 0;
+
+        .link {
+            width: 27%;
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+            border-bottom: 1px solid #ffffff;
+            color: #ffffff;
+            font-weight: normal;
+            margin: 20px 0 0 1.7%;
+            padding: 0 2%;
+            transition: all 0.4s ease-in 0s;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 100;
+            font-size: $ms-text;
+            float: left;
+
+            @media only screen and (max-width: 768px) {
+                padding-top: 10px!important;
+                padding-bottom: 10px !important;
+            }
+        }
+
+        .link:hover{
+            background: #9ddac2;
+            color: #43a191;
+            border-bottom: 1px solid #43a191;
+            transition: all 0.4s ease-in;
+            text-decoration: none;
+            box-shadow: 0px 0px 2px #51bd92;
+        }
+    }
+        
+    &__social-links {
+        display: block;
+        float: right;
+        padding: 0;
+        margin: 0;
+
+        @media only screen and (max-width: 1140px) {
+            padding-right: 5%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            min-width: 100%;
+            max-width: 80px;
+            display: block;
+            padding-right: 0;
+            text-align: center;
+            margin: auto;
+
+            li{
+                width: 50px;
+                display: inline-block;
+            }
+        }
+
+        .behance{
+            margin-top: 20px;
+            height: 29px;
+            width: 29px;
+            display: inline-block;
+            background-image: url("../../images/behance.png");
+            transition: all 0.4s ease-in;
+
+            &:hover{
+                background-position: 0 29px;
+                transition: all 0.4s ease-in;
+            }
+        }
+
+        .linkedin{
+            height: 29px;
+            width: 29px;
+            display: inline-block;
+            background: url("../../images/linkedin.png");
+            transition: all 0.4s ease-in;
+            
+            &:hover{
+                background-position: 0 29px;
+                transition: all 0.4s ease-in;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        background: #82d3b2;
+        height: 800px;
+        width: 100%;
+        float: none;
+        display: none;
+
+        .mobile-nav{
+            display: block !important;
+        }
+             
+        .main-nav__links{
+            width: 100% ;
+            display: block;
+            float: left;
+            padding: 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .link {
+                height: 30px;
+                width: 100%;
+                padding: 0; 
+                margin: 0;
+            
+                &:hover{
+                    background: #9ddac2;
+                    color: #43a191;
+                    border-bottom: 1px solid #43a191;
+                    transition: all 0.4s ease-in;
+                    text-decoration: none;
+                    box-shadow: 0px 0px 2px #51bd92;
+                }
+            }
+        }
+    }
+}
+
+ @media only screen and (max-width: 768px) {
+
+    .header-container{
+        width: 100%;
+        min-height: 40px;
+        max-height: 100%;
+        background-color: #82d3b2;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        margin-top: 0;
+        z-index: 20000;
+        box-shadow: 0 1px 2px -1px #1a4842;
+        padding-top: 5px;   
+        
+    }
+
+    #primary-menu{
+
+        .main-nav{
+            min-height: 0%;
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            display: block;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .main-nav.open{
+            min-height: 100%;
+            height: 100vh;
+            opacity: 1;
+            top: 55px;
+            display: block;
+            position: absolute;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+ }
+
+.showScrollContainer{
+    .main-nav.open{
+        top: 35px !important;
+    }
+}

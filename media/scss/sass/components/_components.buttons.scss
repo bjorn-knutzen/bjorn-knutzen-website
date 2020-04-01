@@ -1,0 +1,42 @@
+.default-btn{
+ 	width: 135px;
+	height: 30px;
+	z-index: 1001;
+	color: #fff;
+	position: absolute;	
+	left: 85%;
+	color: #444444;
+	text-decoration: none;
+	padding-top: 0px;
+	background-color: #efefef;
+	background-image: url("../../images/hoverbackhome.jpg");
+	background-position: -154px 0;
+	background-repeat: no-repeat;
+	font-size: 15px;
+	line-height: 26px;
+	text-align: center;
+	overflow: hidden;
+	margin-left: -100px;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	-webkit-transition: opacity 0.3s linear 1.2s;
+	-moz-transition: opacity 0.3s linear 1.2s;
+	-o-transition: opacity 0.3s linear 1.2s;
+	-ms-transition: opacity 0.3s linear 1.2s;
+	transition: opacity 0.3s linear 1.2s;
+	display: block;
+	transition: background-position 0.5s ease;
+
+	@media only screen and (max-width: 768px) {
+		position: absolute;
+		top: -60px;
+		right: -20px;
+	}
+
+    &:hover{
+        color: #ffffff;
+        background-position: 0px 0;
+        transition: background-position 0.5s ease;
+    }
+
+}

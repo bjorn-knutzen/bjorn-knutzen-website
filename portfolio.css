@@ -1,0 +1,255 @@
+.portfolio-text-block{
+    width: 350px;
+    display: block;
+    padding: 20px;
+    opacity: 0;
+    animation: fade-in 1.5s forwards;
+    animation-delay: 1.5s;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        padding: 20px 0 0 0;
+        margin-bottom: 50px;
+    }
+
+    &__left{
+        float: left;
+        margin-top: -190px;
+        position: relative;
+        overflow: hidden;
+
+        @media only screen and (max-width: 768px) {
+            margin-top: 40px;
+        }
+
+    }
+
+    &__right{
+        float: right;
+        margin-top: -290px;
+
+        @media only screen and (max-width: 768px) {
+            margin-top: 40px;
+        }
+    }
+
+    a,
+    P{
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        padding-right: 0;
+        margin-left: 0px !important;
+
+        @media only screen and (max-width: 768px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            display: block;
+        }
+    }
+
+    h4{
+        font-size: 24px;
+        margin: 0 0 20px 0;
+        padding: 0;
+        color: #ffffff;
+        font-weight: 100;
+
+        @media only screen and (max-width: 768px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            display: block;
+        }
+    }
+}
+
+.bataviagroep{
+
+    .portfolio-text-block{
+        background: #fba947;
+
+        a,
+        p{
+            color: #ffffff;
+        }
+    }
+}
+
+.mauritshuis{
+
+    .portfolio-text-block{
+        background: #aa945f;
+
+        a,
+        p{
+            color: #ffffff;
+        }
+    }
+}
+
+.maaslander{
+
+    .portfolio-text-block{
+        background: #68b35e;
+                
+        &__right{
+            margin-top: -180px;
+
+            @media only screen and (max-width: 768px) {
+                margin-top: 0;
+            }
+        }
+
+        &__left{
+            margin-top: -100px;
+
+            @media only screen and (max-width: 768px) {
+                margin-top: 40px;
+            }
+        }
+
+        a,
+        p{
+            color: #ffffff;
+        }
+    }
+}
+
+
+.arrowjazz{
+
+    .portfolio-text-block{
+        background: #552378;
+
+        a,
+        p{
+            color: #ffffff;
+        }
+    }
+}
+
+
+.gcu-heineken{
+
+    .portfolio-text-block{
+        background: #fa943a;
+
+        a,
+        p{
+            color: #ffffff;
+        }
+
+        
+        &__right{
+            margin-top: -150px;
+
+            @media only screen and (max-width: 768px) {
+                margin-top: 0;
+            }
+        }
+        
+        &__left{
+
+            @media only screen and (max-width: 768px) {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.nivea{
+
+    .portfolio-text-block{
+        background: #0b2a7a;
+
+        a,
+        p{
+            color: #ffffff;
+        }
+
+        &__left{
+            margin-top: -200px;
+
+            @media only screen and (max-width: 768px) {
+                margin-top: 40px;
+            }
+        }
+
+        &__right{
+            margin-top: -200px;
+
+            @media only screen and (max-width: 768px) {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+.probiblio{
+
+    .portfolio-text-block{
+        background: #7788bc;
+
+        a,
+        p{
+            color: #ffffff;
+        }
+
+        &__left{
+            margin-top: -200px;
+
+            @media only screen and (max-width: 768px) {
+                margin-top: 40px;
+            }
+        }
+
+        &__right{
+            margin-top: -200px;
+
+            @media only screen and (max-width: 768px) {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+
+.remax{
+
+    .portfolio-text-block{
+        background: #4184cd;
+
+        a,
+        p{
+            color: #ffffff;
+        }
+
+        &__left{
+            margin-top: -200px;
+
+            @media only screen and (max-width: 768px) {
+                margin-top: 40px;
+            }
+        }
+
+        &__right{
+            margin-top: -200px;
+
+            @media only screen and (max-width: 768px) {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+.digimo,
+.reborn{
+
+    .portfolio-page__content{
+       p{
+            text-align: center;
+       }
+       
+    }
+}
